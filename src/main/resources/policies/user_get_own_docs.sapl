@@ -1,0 +1,4 @@
+policy "user get own doc"
+permit action == "get document"
+where
+    resource.user.id == subject.id;

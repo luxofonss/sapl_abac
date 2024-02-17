@@ -1,0 +1,4 @@
+policy "list documents"
+permit action == "list documents"
+where
+    subject.firstname == "alice";
